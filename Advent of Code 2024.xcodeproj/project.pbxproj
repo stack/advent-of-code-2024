@@ -6,8 +6,37 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D1E20A342CEC148F00CB6727 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = D1E20A332CEC148F00CB6727 /* Algorithms */; };
+		D1E20A362CEC149300CB6727 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = D1E20A352CEC149300CB6727 /* Collections */; };
+		D1E20A512CEC177400CB6727 /* AdventOfCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A282CEC140400CB6727 /* AdventOfCode.framework */; };
+		D1E20A522CEC177400CB6727 /* AdventOfCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A282CEC140400CB6727 /* AdventOfCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1E20A572CEC179B00CB6727 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = D1E20A562CEC179B00CB6727 /* ArgumentParser */; };
+		D1E20A632CEC1FF200CB6727 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D1E20A622CEC1FEE00CB6727 /* README.md */; };
+		D1E20A652CEC202A00CB6727 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D1E20A642CEC202600CB6727 /* LICENSE.txt */; };
+		D1E20AA02CEC22DC00CB6727 /* Visualization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A6C2CEC213700CB6727 /* Visualization.framework */; };
+		D1E20AA12CEC22DC00CB6727 /* Visualization.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A6C2CEC213700CB6727 /* Visualization.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1E20A532CEC177400CB6727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1E20A082CEC131E00CB6727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1E20A272CEC140400CB6727;
+			remoteInfo = "Advent of Code";
+		};
+		D1E20AA22CEC22DC00CB6727 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1E20A082CEC131E00CB6727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1E20A6B2CEC213700CB6727;
+			remoteInfo = Visualization;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		D1E20A0E2CEC131E00CB6727 /* CopyFiles */ = {
+		D1E20A482CEC16F700CB6727 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -16,22 +45,103 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		D1E20A552CEC177400CB6727 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D1E20A522CEC177400CB6727 /* AdventOfCode.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E20AA42CEC22DD00CB6727 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D1E20AA12CEC22DC00CB6727 /* Visualization.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D1E20A102CEC131E00CB6727 /* Advent of Code 2024 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Advent of Code 2024"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1E20A282CEC140400CB6727 /* AdventOfCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdventOfCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1E20A4A2CEC16F700CB6727 /* Advent of Code CLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Advent of Code CLI"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1E20A622CEC1FEE00CB6727 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D1E20A642CEC202600CB6727 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		D1E20A6C2CEC213700CB6727 /* Visualization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Visualization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1E20A912CEC228500CB6727 /* Visualization Testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visualization Testing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1E20AAB2CEC23D800CB6727 /* Visualization 3D Testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visualization 3D Testing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D1E20A122CEC131E00CB6727 /* Advent of Code 2024 */ = {
+		D1E20A292CEC140400CB6727 /* Advent of Code */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Advent of Code 2024";
+			path = "Advent of Code";
+			sourceTree = "<group>";
+		};
+		D1E20A4B2CEC16F700CB6727 /* Advent of Code CLI */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Advent of Code CLI";
+			sourceTree = "<group>";
+		};
+		D1E20A6D2CEC213700CB6727 /* Visualization */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Visualization;
+			sourceTree = "<group>";
+		};
+		D1E20A922CEC228500CB6727 /* Visualization Testing */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Visualization Testing";
+			sourceTree = "<group>";
+		};
+		D1E20AAC2CEC23D900CB6727 /* Visualization 3D Testing */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Visualization 3D Testing";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D1E20A0D2CEC131E00CB6727 /* Frameworks */ = {
+		D1E20A252CEC140400CB6727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1E20A362CEC149300CB6727 /* Collections in Frameworks */,
+				D1E20A342CEC148F00CB6727 /* Algorithms in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E20A472CEC16F700CB6727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1E20A572CEC179B00CB6727 /* ArgumentParser in Frameworks */,
+				D1E20A512CEC177400CB6727 /* AdventOfCode.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E20A692CEC213700CB6727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E20A8E2CEC228500CB6727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1E20AA02CEC22DC00CB6727 /* Visualization.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E20AA82CEC23D800CB6727 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,7 +154,14 @@
 		D1E20A072CEC131E00CB6727 = {
 			isa = PBXGroup;
 			children = (
-				D1E20A122CEC131E00CB6727 /* Advent of Code 2024 */,
+				D1E20A622CEC1FEE00CB6727 /* README.md */,
+				D1E20A642CEC202600CB6727 /* LICENSE.txt */,
+				D1E20A292CEC140400CB6727 /* Advent of Code */,
+				D1E20A4B2CEC16F700CB6727 /* Advent of Code CLI */,
+				D1E20A6D2CEC213700CB6727 /* Visualization */,
+				D1E20A922CEC228500CB6727 /* Visualization Testing */,
+				D1E20AAC2CEC23D900CB6727 /* Visualization 3D Testing */,
+				D1E20A322CEC148F00CB6727 /* Frameworks */,
 				D1E20A112CEC131E00CB6727 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,35 +169,160 @@
 		D1E20A112CEC131E00CB6727 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D1E20A102CEC131E00CB6727 /* Advent of Code 2024 */,
+				D1E20A282CEC140400CB6727 /* AdventOfCode.framework */,
+				D1E20A4A2CEC16F700CB6727 /* Advent of Code CLI */,
+				D1E20A6C2CEC213700CB6727 /* Visualization.framework */,
+				D1E20A912CEC228500CB6727 /* Visualization Testing.app */,
+				D1E20AAB2CEC23D800CB6727 /* Visualization 3D Testing.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D1E20A322CEC148F00CB6727 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D1E20A232CEC140400CB6727 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E20A672CEC213700CB6727 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		D1E20A0F2CEC131E00CB6727 /* Advent of Code 2024 */ = {
+		D1E20A272CEC140400CB6727 /* Advent of Code */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1E20A172CEC131E00CB6727 /* Build configuration list for PBXNativeTarget "Advent of Code 2024" */;
+			buildConfigurationList = D1E20A2D2CEC140400CB6727 /* Build configuration list for PBXNativeTarget "Advent of Code" */;
 			buildPhases = (
-				D1E20A0C2CEC131E00CB6727 /* Sources */,
-				D1E20A0D2CEC131E00CB6727 /* Frameworks */,
-				D1E20A0E2CEC131E00CB6727 /* CopyFiles */,
+				D1E20A232CEC140400CB6727 /* Headers */,
+				D1E20A242CEC140400CB6727 /* Sources */,
+				D1E20A252CEC140400CB6727 /* Frameworks */,
+				D1E20A262CEC140400CB6727 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D1E20A122CEC131E00CB6727 /* Advent of Code 2024 */,
+				D1E20A292CEC140400CB6727 /* Advent of Code */,
 			);
-			name = "Advent of Code 2024";
+			name = "Advent of Code";
+			packageProductDependencies = (
+				D1E20A332CEC148F00CB6727 /* Algorithms */,
+				D1E20A352CEC149300CB6727 /* Collections */,
+			);
+			productName = "Advent of Code";
+			productReference = D1E20A282CEC140400CB6727 /* AdventOfCode.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D1E20A492CEC16F700CB6727 /* Advent of Code CLI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1E20A4E2CEC16F700CB6727 /* Build configuration list for PBXNativeTarget "Advent of Code CLI" */;
+			buildPhases = (
+				D1E20A462CEC16F700CB6727 /* Sources */,
+				D1E20A472CEC16F700CB6727 /* Frameworks */,
+				D1E20A482CEC16F700CB6727 /* CopyFiles */,
+				D1E20A552CEC177400CB6727 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1E20A542CEC177400CB6727 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D1E20A4B2CEC16F700CB6727 /* Advent of Code CLI */,
+			);
+			name = "Advent of Code CLI";
+			packageProductDependencies = (
+				D1E20A562CEC179B00CB6727 /* ArgumentParser */,
+			);
+			productName = "Advent of Code CLI";
+			productReference = D1E20A4A2CEC16F700CB6727 /* Advent of Code CLI */;
+			productType = "com.apple.product-type.tool";
+		};
+		D1E20A6B2CEC213700CB6727 /* Visualization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1E20A712CEC213700CB6727 /* Build configuration list for PBXNativeTarget "Visualization" */;
+			buildPhases = (
+				D1E20A672CEC213700CB6727 /* Headers */,
+				D1E20A682CEC213700CB6727 /* Sources */,
+				D1E20A692CEC213700CB6727 /* Frameworks */,
+				D1E20A6A2CEC213700CB6727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D1E20A6D2CEC213700CB6727 /* Visualization */,
+			);
+			name = Visualization;
 			packageProductDependencies = (
 			);
-			productName = "Advent of Code 2024";
-			productReference = D1E20A102CEC131E00CB6727 /* Advent of Code 2024 */;
-			productType = "com.apple.product-type.tool";
+			productName = Visualization;
+			productReference = D1E20A6C2CEC213700CB6727 /* Visualization.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D1E20A902CEC228500CB6727 /* Visualization Testing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1E20A9D2CEC228600CB6727 /* Build configuration list for PBXNativeTarget "Visualization Testing" */;
+			buildPhases = (
+				D1E20A8D2CEC228500CB6727 /* Sources */,
+				D1E20A8E2CEC228500CB6727 /* Frameworks */,
+				D1E20A8F2CEC228500CB6727 /* Resources */,
+				D1E20AA42CEC22DD00CB6727 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1E20AA32CEC22DC00CB6727 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D1E20A922CEC228500CB6727 /* Visualization Testing */,
+			);
+			name = "Visualization Testing";
+			packageProductDependencies = (
+			);
+			productName = "Visualization Testing";
+			productReference = D1E20A912CEC228500CB6727 /* Visualization Testing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1E20AAA2CEC23D800CB6727 /* Visualization 3D Testing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1E20AB72CEC23DA00CB6727 /* Build configuration list for PBXNativeTarget "Visualization 3D Testing" */;
+			buildPhases = (
+				D1E20AA72CEC23D800CB6727 /* Sources */,
+				D1E20AA82CEC23D800CB6727 /* Frameworks */,
+				D1E20AA92CEC23D800CB6727 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D1E20AAC2CEC23D900CB6727 /* Visualization 3D Testing */,
+			);
+			name = "Visualization 3D Testing";
+			packageProductDependencies = (
+			);
+			productName = "Visualization 3D Testing";
+			productReference = D1E20AAB2CEC23D800CB6727 /* Visualization 3D Testing.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -92,7 +334,21 @@
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
-					D1E20A0F2CEC131E00CB6727 = {
+					D1E20A272CEC140400CB6727 = {
+						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
+					};
+					D1E20A492CEC16F700CB6727 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					D1E20A6B2CEC213700CB6727 = {
+						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
+					};
+					D1E20A902CEC228500CB6727 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					D1E20AAA2CEC23D800CB6727 = {
 						CreatedOnToolsVersion = 16.1;
 					};
 				};
@@ -106,18 +362,88 @@
 			);
 			mainGroup = D1E20A072CEC131E00CB6727;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D1E20A1A2CEC138700CB6727 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				D1E20A1D2CEC13AE00CB6727 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				D1E20A202CEC13BF00CB6727 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D1E20A112CEC131E00CB6727 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D1E20A0F2CEC131E00CB6727 /* Advent of Code 2024 */,
+				D1E20A272CEC140400CB6727 /* Advent of Code */,
+				D1E20A492CEC16F700CB6727 /* Advent of Code CLI */,
+				D1E20A6B2CEC213700CB6727 /* Visualization */,
+				D1E20A902CEC228500CB6727 /* Visualization Testing */,
+				D1E20AAA2CEC23D800CB6727 /* Visualization 3D Testing */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		D1E20A262CEC140400CB6727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1E20A652CEC202A00CB6727 /* LICENSE.txt in Resources */,
+				D1E20A632CEC1FF200CB6727 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E20A6A2CEC213700CB6727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E20A8F2CEC228500CB6727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E20AA92CEC23D800CB6727 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		D1E20A0C2CEC131E00CB6727 /* Sources */ = {
+		D1E20A242CEC140400CB6727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E20A462CEC16F700CB6727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E20A682CEC213700CB6727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E20A8D2CEC228500CB6727 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E20AA72CEC23D800CB6727 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,6 +451,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1E20A542CEC177400CB6727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1E20A272CEC140400CB6727 /* Advent of Code */;
+			targetProxy = D1E20A532CEC177400CB6727 /* PBXContainerItemProxy */;
+		};
+		D1E20AA32CEC22DC00CB6727 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1E20A6B2CEC213700CB6727 /* Visualization */;
+			targetProxy = D1E20AA22CEC22DC00CB6727 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D1E20A152CEC131E00CB6727 /* Debug */ = {
@@ -245,25 +584,369 @@
 			};
 			name = Release;
 		};
-		D1E20A182CEC131E00CB6727 /* Debug */ = {
+		D1E20A2E2CEC140400CB6727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.advent-of-code.2024";
+				PRODUCT_MODULE_NAME = AdventOfCode;
+				PRODUCT_NAME = AdventOfCode;
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D1E20A2F2CEC140400CB6727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.advent-of-code.2024";
+				PRODUCT_MODULE_NAME = AdventOfCode;
+				PRODUCT_NAME = AdventOfCode;
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		D1E20A4F2CEC16F700CB6727 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_MODULE_NAME = AdventOfCodeCLI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		D1E20A192CEC131E00CB6727 /* Release */ = {
+		D1E20A502CEC16F700CB6727 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_MODULE_NAME = AdventOfCodeCLI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D1E20A722CEC213700CB6727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.advent-of-code.2024.visualization";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		D1E20A732CEC213700CB6727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.advent-of-code.2024.visualization";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				XROS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		D1E20A9E2CEC228600CB6727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Visualization Testing/VisualizationTesting.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.advent-of-code.2024.visualization-testing";
+				PRODUCT_MODULE_NAME = VisualizationTesting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		D1E20A9F2CEC228600CB6727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Visualization Testing/VisualizationTesting.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.advent-of-code.2024.visualization-testing";
+				PRODUCT_MODULE_NAME = VisualizationTesting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		D1E20AB82CEC23DA00CB6727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Visualization 3D Testing/Visualization3DTesting.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.advent-of-code.2024.visualization-3d-testing";
+				PRODUCT_MODULE_NAME = Visualization3DTesting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		D1E20AB92CEC23DA00CB6727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Visualization 3D Testing/Visualization3DTesting.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.advent-of-code.2024.visualization-3d-testing";
+				PRODUCT_MODULE_NAME = Visualization3DTesting;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.1;
 			};
 			name = Release;
 		};
@@ -279,16 +962,97 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1E20A172CEC131E00CB6727 /* Build configuration list for PBXNativeTarget "Advent of Code 2024" */ = {
+		D1E20A2D2CEC140400CB6727 /* Build configuration list for PBXNativeTarget "Advent of Code" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D1E20A182CEC131E00CB6727 /* Debug */,
-				D1E20A192CEC131E00CB6727 /* Release */,
+				D1E20A2E2CEC140400CB6727 /* Debug */,
+				D1E20A2F2CEC140400CB6727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1E20A4E2CEC16F700CB6727 /* Build configuration list for PBXNativeTarget "Advent of Code CLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1E20A4F2CEC16F700CB6727 /* Debug */,
+				D1E20A502CEC16F700CB6727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1E20A712CEC213700CB6727 /* Build configuration list for PBXNativeTarget "Visualization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1E20A722CEC213700CB6727 /* Debug */,
+				D1E20A732CEC213700CB6727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1E20A9D2CEC228600CB6727 /* Build configuration list for PBXNativeTarget "Visualization Testing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1E20A9E2CEC228600CB6727 /* Debug */,
+				D1E20A9F2CEC228600CB6727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1E20AB72CEC23DA00CB6727 /* Build configuration list for PBXNativeTarget "Visualization 3D Testing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1E20AB82CEC23DA00CB6727 /* Debug */,
+				D1E20AB92CEC23DA00CB6727 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D1E20A1A2CEC138700CB6727 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+		D1E20A1D2CEC13AE00CB6727 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.4;
+			};
+		};
+		D1E20A202CEC13BF00CB6727 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D1E20A332CEC148F00CB6727 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1E20A202CEC13BF00CB6727 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		D1E20A352CEC149300CB6727 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1E20A1D2CEC13AE00CB6727 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		D1E20A562CEC179B00CB6727 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1E20A1A2CEC138700CB6727 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D1E20A082CEC131E00CB6727 /* Project object */;
 }
