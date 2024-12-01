@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1DE36A22CFCD81C009225E4 /* Visualization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A6C2CEC213700CB6727 /* Visualization.framework */; };
+		D1DE36A32CFCD81C009225E4 /* Visualization.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A6C2CEC213700CB6727 /* Visualization.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1E20A342CEC148F00CB6727 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = D1E20A332CEC148F00CB6727 /* Algorithms */; };
 		D1E20A362CEC149300CB6727 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = D1E20A352CEC149300CB6727 /* Collections */; };
 		D1E20A512CEC177400CB6727 /* AdventOfCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A282CEC140400CB6727 /* AdventOfCode.framework */; };
@@ -19,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D1DE36A42CFCD81C009225E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1E20A082CEC131E00CB6727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1E20A6B2CEC213700CB6727;
+			remoteInfo = Visualization;
+		};
 		D1E20A532CEC177400CB6727 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D1E20A082CEC131E00CB6727 /* Project object */;
@@ -36,6 +45,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D1DE36A62CFCD81C009225E4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D1DE36A32CFCD81C009225E4 /* Visualization.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1E20A482CEC16F700CB6727 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1DE36A22CFCD81C009225E4 /* Visualization.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,10 +330,12 @@
 				D1E20AA72CEC23D800CB6727 /* Sources */,
 				D1E20AA82CEC23D800CB6727 /* Frameworks */,
 				D1E20AA92CEC23D800CB6727 /* Resources */,
+				D1DE36A62CFCD81C009225E4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D1DE36A52CFCD81C009225E4 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				D1E20AAC2CEC23D900CB6727 /* Visualization 3D Testing */,
@@ -453,6 +476,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D1DE36A52CFCD81C009225E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1E20A6B2CEC213700CB6727 /* Visualization */;
+			targetProxy = D1DE36A42CFCD81C009225E4 /* PBXContainerItemProxy */;
+		};
 		D1E20A542CEC177400CB6727 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D1E20A272CEC140400CB6727 /* Advent of Code */;
@@ -592,7 +620,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -639,7 +667,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -711,7 +739,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -757,7 +785,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = GE3GZ86XX9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
