@@ -57,10 +57,26 @@ public struct Day2: AdventDay {
     }
     
     public func part1() async throws -> Any {
-        reports.filter(\.isSafe).count
+        await withTaskGroup(of: Int.self, returning: Int.self) { taskGroup in
+            for report in reports {
+                taskGroup.addTask {
+                    report.isSafe ? 1 : 0
+                }
+            }
+            
+            return await taskGroup.reduce(0, +)
+        }
     }
     
     public func part2() async throws -> Any {
-        reports.filter(\.isSafeDampened).count
+        await withTaskGroup(of: Int.self, returning: Int.self) { taskGroup in
+            for report in reports {
+                taskGroup.addTask {
+                    report.isSafeDampened ? 1 : 0
+                }
+            }
+            
+            return await taskGroup.reduce(0, +)
+        }
     }
 }
