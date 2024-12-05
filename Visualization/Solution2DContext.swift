@@ -125,6 +125,24 @@ open class Solution2DContext: SolutionContext {
         CTFrameDraw(ctFrame, context)
     }
     
+    public func offscreenImage(draw: (CGContext) -> Void) -> CGImage? {
+        guard let context = CGContext(
+            data: nil,
+            width: width,
+            height: height,
+            bitsPerComponent: 8,
+            bytesPerRow: 0, space:
+                CGColorSpaceCreateDeviceRGB(),
+            bitmapInfo: CGImageAlphaInfo.premultipliedFirst.rawValue + CGBitmapInfo.byteOrder32Little.rawValue
+        ) else {
+            return nil
+        }
+        
+        draw(context)
+        
+        return context.makeImage()
+    }
+    
     public func fill(rect: CGRect, color: CGColor, in context: CGContext) {
         let finalRect = CGRect(x: rect.origin.x, y: CGFloat(context.height) - rect.origin.y - rect.size.height, width: rect.size.width, height: rect.size.height)
         

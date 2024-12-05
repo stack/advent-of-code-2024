@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1A5041A2D011F9A00849EE5 /* AdventOfCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A282CEC140400CB6727 /* AdventOfCode.framework */; };
+		D1A5041B2D011F9A00849EE5 /* AdventOfCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A282CEC140400CB6727 /* AdventOfCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1A5041E2D011F9A00849EE5 /* Visualization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A6C2CEC213700CB6727 /* Visualization.framework */; };
+		D1A5041F2D011F9A00849EE5 /* Visualization.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A6C2CEC213700CB6727 /* Visualization.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1DE36A22CFCD81C009225E4 /* Visualization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A6C2CEC213700CB6727 /* Visualization.framework */; };
 		D1DE36A32CFCD81C009225E4 /* Visualization.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A6C2CEC213700CB6727 /* Visualization.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1E20A342CEC148F00CB6727 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = D1E20A332CEC148F00CB6727 /* Algorithms */; };
@@ -21,6 +25,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D1A5041C2D011F9A00849EE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1E20A082CEC131E00CB6727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1E20A272CEC140400CB6727;
+			remoteInfo = "Advent of Code";
+		};
+		D1A504202D011F9A00849EE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1E20A082CEC131E00CB6727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1E20A6B2CEC213700CB6727;
+			remoteInfo = Visualization;
+		};
 		D1DE36A42CFCD81C009225E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D1E20A082CEC131E00CB6727 /* Project object */;
@@ -45,6 +63,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D1A504222D011F9A00849EE5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D1A5041B2D011F9A00849EE5 /* AdventOfCode.framework in Embed Frameworks */,
+				D1A5041F2D011F9A00849EE5 /* Visualization.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1DE36A62CFCD81C009225E4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,6 +120,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D1A504092D011EC900849EE5 /* Day 4 Visualization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day 4 Visualization.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E20A282CEC140400CB6727 /* AdventOfCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdventOfCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E20A4A2CEC16F700CB6727 /* Advent of Code CLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Advent of Code CLI"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E20A622CEC1FEE00CB6727 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -100,6 +131,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		D1A5040A2D011EC900849EE5 /* Day 4 Visualization */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Day 4 Visualization";
+			sourceTree = "<group>";
+		};
 		D1E20A292CEC140400CB6727 /* Advent of Code */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Advent of Code";
@@ -128,6 +164,15 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D1A504062D011EC900849EE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1A5041A2D011F9A00849EE5 /* AdventOfCode.framework in Frameworks */,
+				D1A5041E2D011F9A00849EE5 /* Visualization.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1E20A252CEC140400CB6727 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,6 +225,7 @@
 				D1E20A292CEC140400CB6727 /* Advent of Code */,
 				D1E20A4B2CEC16F700CB6727 /* Advent of Code CLI */,
 				D1E20A6D2CEC213700CB6727 /* Visualization */,
+				D1A5040A2D011EC900849EE5 /* Day 4 Visualization */,
 				D1E20A922CEC228500CB6727 /* Visualization Testing */,
 				D1E20AAC2CEC23D900CB6727 /* Visualization 3D Testing */,
 				D1E20A322CEC148F00CB6727 /* Frameworks */,
@@ -195,6 +241,7 @@
 				D1E20A6C2CEC213700CB6727 /* Visualization.framework */,
 				D1E20A912CEC228500CB6727 /* Visualization Testing.app */,
 				D1E20AAB2CEC23D800CB6727 /* Visualization 3D Testing.app */,
+				D1A504092D011EC900849EE5 /* Day 4 Visualization.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,6 +273,31 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D1A504082D011EC900849EE5 /* Day 4 Visualization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1A504152D011ECB00849EE5 /* Build configuration list for PBXNativeTarget "Day 4 Visualization" */;
+			buildPhases = (
+				D1A504052D011EC900849EE5 /* Sources */,
+				D1A504062D011EC900849EE5 /* Frameworks */,
+				D1A504072D011EC900849EE5 /* Resources */,
+				D1A504222D011F9A00849EE5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1A5041D2D011F9A00849EE5 /* PBXTargetDependency */,
+				D1A504212D011F9A00849EE5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D1A5040A2D011EC900849EE5 /* Day 4 Visualization */,
+			);
+			name = "Day 4 Visualization";
+			packageProductDependencies = (
+			);
+			productName = "Day 4 Visualization";
+			productReference = D1A504092D011EC900849EE5 /* Day 4 Visualization.app */;
+			productType = "com.apple.product-type.application";
+		};
 		D1E20A272CEC140400CB6727 /* Advent of Code */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1E20A2D2CEC140400CB6727 /* Build configuration list for PBXNativeTarget "Advent of Code" */;
@@ -357,6 +429,9 @@
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					D1A504082D011EC900849EE5 = {
+						CreatedOnToolsVersion = 16.1;
+					};
 					D1E20A272CEC140400CB6727 = {
 						CreatedOnToolsVersion = 16.1;
 						LastSwiftMigration = 1610;
@@ -398,6 +473,7 @@
 				D1E20A272CEC140400CB6727 /* Advent of Code */,
 				D1E20A492CEC16F700CB6727 /* Advent of Code CLI */,
 				D1E20A6B2CEC213700CB6727 /* Visualization */,
+				D1A504082D011EC900849EE5 /* Day 4 Visualization */,
 				D1E20A902CEC228500CB6727 /* Visualization Testing */,
 				D1E20AAA2CEC23D800CB6727 /* Visualization 3D Testing */,
 			);
@@ -405,6 +481,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D1A504072D011EC900849EE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1E20A262CEC140400CB6727 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -438,6 +521,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D1A504052D011EC900849EE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1E20A242CEC140400CB6727 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -476,6 +566,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D1A5041D2D011F9A00849EE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1E20A272CEC140400CB6727 /* Advent of Code */;
+			targetProxy = D1A5041C2D011F9A00849EE5 /* PBXContainerItemProxy */;
+		};
+		D1A504212D011F9A00849EE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1E20A6B2CEC213700CB6727 /* Visualization */;
+			targetProxy = D1A504202D011F9A00849EE5 /* PBXContainerItemProxy */;
+		};
 		D1DE36A52CFCD81C009225E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D1E20A6B2CEC213700CB6727 /* Visualization */;
@@ -494,6 +594,84 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D1A504162D011ECB00849EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Day 4 Visualization/Day4Visualization.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Day 4 Visualization/Preview Content\"";
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.advent-of-code.2024.day-4-visualization";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		D1A504172D011ECB00849EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Day 4 Visualization/Day4Visualization.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Day 4 Visualization/Preview Content\"";
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.advent-of-code.2024.day-4-visualization";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 		D1E20A152CEC131E00CB6727 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -981,6 +1159,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D1A504152D011ECB00849EE5 /* Build configuration list for PBXNativeTarget "Day 4 Visualization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1A504162D011ECB00849EE5 /* Debug */,
+				D1A504172D011ECB00849EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D1E20A0B2CEC131E00CB6727 /* Build configuration list for PBXProject "Advent of Code 2024" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
