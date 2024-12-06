@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Point: Hashable {
+public struct Point: Hashable, Sendable {
     public var x: Int
     public var y: Int
 

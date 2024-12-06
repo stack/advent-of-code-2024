@@ -13,7 +13,7 @@ import Foundation
 // Add each new day implementation to this array:
 let allChallenges: [any AdventDay] = [
     Day0(), Day1(), Day2(), Day3(), Day4(),
-    Day5()
+    Day5(), Day6()
 ]
 
 @main
@@ -21,8 +21,8 @@ struct AdventOfCode: AsyncParsableCommand {
     @Argument(help: "The day of the challenge. For December 1st, use '1'.")
     var day: Int?
 
-    @Flag(help: "Benchmark the time taken by the solution")
-    var benchmark: Bool = false
+    @Flag(inversion: .prefixedNo, help: "Benchmark the time taken by the solution")
+    var benchmark: Bool = true
     
     @Flag(inversion: .prefixedNo, help: "Use sample data instead of the given input data")
     var sampleData: Bool = false

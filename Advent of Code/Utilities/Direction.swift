@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum Direction: Hashable, CustomDebugStringConvertible {
+public enum Direction: Hashable, CustomDebugStringConvertible, Sendable {
     case north
     case south
     case east
@@ -20,6 +20,24 @@ public enum Direction: Hashable, CustomDebugStringConvertible {
         case .south: "v"
         case .east: ">"
         case .west: "<"
+        }
+    }
+    
+    public var turnedLeft: Direction {
+        switch self {
+        case .north: .west
+        case .south: .east
+        case .east: .north
+        case .west: .south
+        }
+    }
+    
+    public var turnedRight: Direction {
+        switch self {
+        case .north: .east
+        case .south: .west
+        case .east: .south
+        case .west: .north
         }
     }
 }
