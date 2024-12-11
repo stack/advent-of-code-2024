@@ -10,19 +10,7 @@ import AVFoundation
 import Combine
 import Foundation
 
-#if os(macOS)
-import AppKit
 
-public typealias NativeColor = NSColor
-public typealias NativeFont = NSFont
-
-#else
-import UIKit
-
-public typealias NativeColor = UIColor
-public typealias NativeFont = UIFont
-
-#endif
 
 open class Solution2DContext: SolutionContext {
     

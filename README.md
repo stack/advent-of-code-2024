@@ -15,3 +15,7 @@ _Coming Soon_
 ## Credits
 
 * [Advent of Code Swift Starter Project](https://github.com/apple/swift-aoc-starter-example/tree/main) A simple template from Apple to run Advent of Code challenges.
+
+## Assets
+
+* [Flag](https://sketchfab.com/3d-models/flag-e947a018194745598df88444bf43de11) by Guillermo T

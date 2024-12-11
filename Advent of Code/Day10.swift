@@ -10,12 +10,27 @@ import Foundation
 
 public struct Day10: AdventDay {
     
-    struct Trail {
-        var heads: Set<Point>
-        var tiles: [Point:Int]
+    public struct Trail: Sendable {
         
-        init<T: StringProtocol>(data: T) {
+        public var heads: Set<Point>
+        public var tiles: [Point:Int]
+        public var ends: Set<Point>
+        
+        public var size: CGSize {
+            var width = 0
+            var height = 0
+            
+            for point in tiles.keys {
+                width = max(width, point.x + 1)
+                height = max(height, point.y + 1)
+            }
+            
+            return CGSize(width: CGFloat(width), height: CGFloat(height))
+        }
+        
+        public init<T: StringProtocol>(data: T) {
             var heads: Set<Point> = []
+            var ends: Set<Point> = []
             var tiles: [Point:Int] = [:]
             
             for (y, line) in data.split(separator: "\n").enumerated() {
@@ -27,15 +42,18 @@ public struct Day10: AdventDay {
                     
                     if value == 0 {
                         heads.insert(point)
+                    } else if value == 9 {
+                        ends.insert(point)
                     }
                 }
             }
             
             self.heads = heads
+            self.ends = ends
             self.tiles = tiles
         }
         
-        func hike() async -> Int {
+        public func hike() async -> Int {
             await withTaskGroup(of: Int.self, returning: Int.self) { taskGroup in
                 for head in heads {
                     taskGroup.addTask {
@@ -47,7 +65,7 @@ public struct Day10: AdventDay {
             }
         }
         
-        func hike(from point: Point) -> Set<Point> {
+        public func hike(from point: Point) -> Set<Point> {
             var remaining = [point]
             var found: Set<Point> = []
             
@@ -72,7 +90,7 @@ public struct Day10: AdventDay {
             return found
         }
         
-        func hikeBetter() async -> Int {
+        public func hikeBetter() async -> Int {
             await withTaskGroup(of: Int.self, returning: Int.self) { taskGroup in
                 for head in heads {
                     taskGroup.addTask {
@@ -84,13 +102,15 @@ public struct Day10: AdventDay {
             }
         }
         
-        func hikeBetter(from point: Point) -> Int {
+        @discardableResult public func hikeBetter(from point: Point, visited: ((Point, Int) -> Void)? = nil) -> Int {
             var remaining = [point]
             var found = 0
             
             while !remaining.isEmpty {
                 let current = remaining.removeFirst()
                 guard let currentValue = tiles[current] else { continue }
+                
+                visited?(current, currentValue)
                 
                 if currentValue == 9 {
                     found += 1

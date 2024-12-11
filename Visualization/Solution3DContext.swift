@@ -74,6 +74,10 @@ fileprivate struct LightConstants {
 
 open class Solution3DContext: SolutionContext {
     
+    enum CameraMode {
+        case projection
+        case orthographic
+    }
     // MARK: - Properties
     
     private var meshBufferAllocator: MTKMeshBufferAllocator!
@@ -96,9 +100,15 @@ open class Solution3DContext: SolutionContext {
     private var lightsTable: [String:SolutionLight] = [:]
     private var lights: [SolutionLight] = []
     
+    private var cameraMode: CameraMode = .projection
+    
     private var perspectiveNear: Float = 0.01
     private var perspectiveFar: Float = 1000
     private var perspectiveAngle: Float = .pi / 3
+    
+    private var orthographicWidth: Float = 800.0
+    private var orthographicHeight: Float = 600.0
+    private var orthographicDepth: Float = 100
     
     private var commandQueue: MTLCommandQueue!
     private var constantBuffer: MTLBuffer!
@@ -596,10 +606,20 @@ open class Solution3DContext: SolutionContext {
         if let color { light.color = color }
     }
     
+    public func updateOrthographic(width: Float, height: Float, depth: Float) {
+        orthographicWidth = width
+        orthographicHeight = height
+        orthographicDepth = depth
+        
+        cameraMode = .orthographic
+    }
+    
     public func updatePerspective(near: Float, far: Float, angle: Float) {
         perspectiveNear = near
         perspectiveFar = far
         perspectiveAngle = angle
+        
+        cameraMode = .projection
     }
     
     // MARK: - Drawing
@@ -821,12 +841,18 @@ open class Solution3DContext: SolutionContext {
     
     private func updateFrameConstants() -> Int {
         let aspectRatio = Float(width) / Float(height)
-        let projectionMatrix = simd_float4x4(
-            perspectiveProjectionFoVY: perspectiveAngle,
-            aspectRatio: aspectRatio,
-            near: perspectiveNear,
-            far: perspectiveFar
-        )
+        
+        let projectionMatrix = switch cameraMode {
+        case .projection:
+            simd_float4x4(
+                perspectiveProjectionFoVY: perspectiveAngle,
+                aspectRatio: aspectRatio,
+                near: perspectiveNear,
+                far: perspectiveFar
+            )
+        case .orthographic:
+            simd_float4x4(orthographicProjectionWithLeft: -orthographicWidth / 2, top: -orthographicHeight / 2, right: orthographicWidth / 2, bottom: orthographicHeight, near: 0.01, far: orthographicDepth)
+        }
         
         let cameraMatrix = pointOfView
         let viewMatrix = cameraMatrix.inverse
