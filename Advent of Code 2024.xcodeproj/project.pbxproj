@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D11C756E2D0CB5400061552B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D11C756D2D0CB5400061552B /* Accelerate.framework */; };
 		D1A5041A2D011F9A00849EE5 /* AdventOfCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A282CEC140400CB6727 /* AdventOfCode.framework */; };
 		D1A5041B2D011F9A00849EE5 /* AdventOfCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A282CEC140400CB6727 /* AdventOfCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1A5041E2D011F9A00849EE5 /* Visualization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A6C2CEC213700CB6727 /* Visualization.framework */; };
@@ -150,6 +151,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D11C756D2D0CB5400061552B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		D1A504092D011EC900849EE5 /* Day 4 Visualization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day 4 Visualization.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A504F72D08ED0000849EE5 /* Day 10 Visualization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day 10 Visualization.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E20A282CEC140400CB6727 /* AdventOfCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdventOfCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,6 +224,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D11C756E2D0CB5400061552B /* Accelerate.framework in Frameworks */,
 				D1E20A362CEC149300CB6727 /* Collections in Frameworks */,
 				D1E20A342CEC148F00CB6727 /* Algorithms in Frameworks */,
 			);
@@ -296,6 +299,7 @@
 		D1E20A322CEC148F00CB6727 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D11C756D2D0CB5400061552B /* Accelerate.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -982,6 +986,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"ACCELERATE_NEW_LAPACK=1",
+					"ACCELERATE_LAPACK_ILP64=1",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1029,6 +1039,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"ACCELERATE_NEW_LAPACK=1",
+					"ACCELERATE_LAPACK_ILP64=1",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
