@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D11C756E2D0CB5400061552B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D11C756D2D0CB5400061552B /* Accelerate.framework */; };
+		D11C75892D0DC0E40061552B /* AdventOfCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A282CEC140400CB6727 /* AdventOfCode.framework */; };
+		D11C758A2D0DC0E40061552B /* AdventOfCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A282CEC140400CB6727 /* AdventOfCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D11C758D2D0DC0E40061552B /* Visualization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A6C2CEC213700CB6727 /* Visualization.framework */; };
+		D11C758E2D0DC0E40061552B /* Visualization.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A6C2CEC213700CB6727 /* Visualization.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1A5041A2D011F9A00849EE5 /* AdventOfCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A282CEC140400CB6727 /* AdventOfCode.framework */; };
 		D1A5041B2D011F9A00849EE5 /* AdventOfCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A282CEC140400CB6727 /* AdventOfCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1A5041E2D011F9A00849EE5 /* Visualization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A6C2CEC213700CB6727 /* Visualization.framework */; };
@@ -30,6 +34,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D11C758B2D0DC0E40061552B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1E20A082CEC131E00CB6727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1E20A272CEC140400CB6727;
+			remoteInfo = "Advent of Code";
+		};
+		D11C758F2D0DC0E40061552B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1E20A082CEC131E00CB6727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1E20A6B2CEC213700CB6727;
+			remoteInfo = Visualization;
+		};
 		D1A5041C2D011F9A00849EE5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D1E20A082CEC131E00CB6727 /* Project object */;
@@ -82,6 +100,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D11C75912D0DC0E40061552B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D11C758A2D0DC0E40061552B /* AdventOfCode.framework in Embed Frameworks */,
+				D11C758E2D0DC0E40061552B /* Visualization.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1A504222D011F9A00849EE5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,6 +182,7 @@
 
 /* Begin PBXFileReference section */
 		D11C756D2D0CB5400061552B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		D11C757A2D0DC0970061552B /* Day 14 Visualization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day 14 Visualization.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A504092D011EC900849EE5 /* Day 4 Visualization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day 4 Visualization.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A504F72D08ED0000849EE5 /* Day 10 Visualization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day 10 Visualization.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E20A282CEC140400CB6727 /* AdventOfCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdventOfCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +195,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		D11C757B2D0DC0970061552B /* Day 14 Visualization */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Day 14 Visualization";
+			sourceTree = "<group>";
+		};
 		D1A5040A2D011EC900849EE5 /* Day 4 Visualization */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Day 4 Visualization";
@@ -202,6 +238,15 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D11C75772D0DC0970061552B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D11C75892D0DC0E40061552B /* AdventOfCode.framework in Frameworks */,
+				D11C758D2D0DC0E40061552B /* Visualization.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1A504062D011EC900849EE5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,6 +320,7 @@
 				D1E20A6D2CEC213700CB6727 /* Visualization */,
 				D1A5040A2D011EC900849EE5 /* Day 4 Visualization */,
 				D1A504F82D08ED0000849EE5 /* Day 10 Visualization */,
+				D11C757B2D0DC0970061552B /* Day 14 Visualization */,
 				D1E20A922CEC228500CB6727 /* Visualization Testing */,
 				D1E20AAC2CEC23D900CB6727 /* Visualization 3D Testing */,
 				D1E20A322CEC148F00CB6727 /* Frameworks */,
@@ -292,6 +338,7 @@
 				D1E20AAB2CEC23D800CB6727 /* Visualization 3D Testing.app */,
 				D1A504092D011EC900849EE5 /* Day 4 Visualization.app */,
 				D1A504F72D08ED0000849EE5 /* Day 10 Visualization.app */,
+				D11C757A2D0DC0970061552B /* Day 14 Visualization.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -324,6 +371,31 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D11C75792D0DC0970061552B /* Day 14 Visualization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D11C75862D0DC0980061552B /* Build configuration list for PBXNativeTarget "Day 14 Visualization" */;
+			buildPhases = (
+				D11C75762D0DC0970061552B /* Sources */,
+				D11C75772D0DC0970061552B /* Frameworks */,
+				D11C75782D0DC0970061552B /* Resources */,
+				D11C75912D0DC0E40061552B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D11C758C2D0DC0E40061552B /* PBXTargetDependency */,
+				D11C75902D0DC0E40061552B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D11C757B2D0DC0970061552B /* Day 14 Visualization */,
+			);
+			name = "Day 14 Visualization";
+			packageProductDependencies = (
+			);
+			productName = "Day 14 Visualization";
+			productReference = D11C757A2D0DC0970061552B /* Day 14 Visualization.app */;
+			productType = "com.apple.product-type.application";
+		};
 		D1A504082D011EC900849EE5 /* Day 4 Visualization */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1A504152D011ECB00849EE5 /* Build configuration list for PBXNativeTarget "Day 4 Visualization" */;
@@ -502,9 +574,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1610;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					D11C75792D0DC0970061552B = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					D1A504082D011EC900849EE5 = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -554,6 +629,7 @@
 				D1E20A6B2CEC213700CB6727 /* Visualization */,
 				D1A504082D011EC900849EE5 /* Day 4 Visualization */,
 				D1A504F62D08ED0000849EE5 /* Day 10 Visualization */,
+				D11C75792D0DC0970061552B /* Day 14 Visualization */,
 				D1E20A902CEC228500CB6727 /* Visualization Testing */,
 				D1E20AAA2CEC23D800CB6727 /* Visualization 3D Testing */,
 			);
@@ -561,6 +637,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D11C75782D0DC0970061552B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1A504072D011EC900849EE5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -608,6 +691,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D11C75762D0DC0970061552B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1A504052D011EC900849EE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -660,6 +750,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D11C758C2D0DC0E40061552B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1E20A272CEC140400CB6727 /* Advent of Code */;
+			targetProxy = D11C758B2D0DC0E40061552B /* PBXContainerItemProxy */;
+		};
+		D11C75902D0DC0E40061552B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1E20A6B2CEC213700CB6727 /* Visualization */;
+			targetProxy = D11C758F2D0DC0E40061552B /* PBXContainerItemProxy */;
+		};
 		D1A5041D2D011F9A00849EE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D1E20A272CEC140400CB6727 /* Advent of Code */;
@@ -698,6 +798,84 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D11C75872D0DC0980061552B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Day 14 Visualization/Day14Visualization.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Day 14 Visualization/Preview Content\"";
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.advent-of-code.2024.day-14-visualization";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		D11C75882D0DC0980061552B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Day 14 Visualization/Day14Visualization.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Day 14 Visualization/Preview Content\"";
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.advent-of-code.2024.day-14-visualization";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 		D1A504162D011ECB00849EE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1351,6 +1529,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D11C75862D0DC0980061552B /* Build configuration list for PBXNativeTarget "Day 14 Visualization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D11C75872D0DC0980061552B /* Debug */,
+				D11C75882D0DC0980061552B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D1A504152D011ECB00849EE5 /* Build configuration list for PBXNativeTarget "Day 4 Visualization" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

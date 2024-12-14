@@ -21,3 +21,9 @@ public func gcd<T: SignedInteger>(_ a: T, _ b: T) -> T {
         return b
     }
 }
+
+public func mod(_ a: Int, _ n: Int) -> Int {
+    precondition(n > 0, "modulus must be positive")
+    let r = a % n
+    return r >= 0 ? r : r + n
+}
