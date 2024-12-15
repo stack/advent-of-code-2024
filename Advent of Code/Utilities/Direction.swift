@@ -40,4 +40,13 @@ public enum Direction: Hashable, CustomDebugStringConvertible, Sendable {
         case .west: .north
         }
     }
+    
+    public var offset: Point {
+        switch self {
+        case .north: Point(x: 0, y: -1)
+        case .south: Point(x: 0, y: 1)
+        case .east: Point(x: 1, y: 0)
+        case .west: Point(x: -1, y: 0)
+        }
+    }
 }
