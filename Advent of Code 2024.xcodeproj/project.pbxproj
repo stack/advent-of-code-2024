@@ -12,6 +12,10 @@
 		D11C758A2D0DC0E40061552B /* AdventOfCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A282CEC140400CB6727 /* AdventOfCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D11C758D2D0DC0E40061552B /* Visualization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A6C2CEC213700CB6727 /* Visualization.framework */; };
 		D11C758E2D0DC0E40061552B /* Visualization.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A6C2CEC213700CB6727 /* Visualization.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D11C75AE2D0F96DB0061552B /* AdventOfCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A282CEC140400CB6727 /* AdventOfCode.framework */; };
+		D11C75AF2D0F96DB0061552B /* AdventOfCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A282CEC140400CB6727 /* AdventOfCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D11C75B22D0F96DB0061552B /* Visualization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A6C2CEC213700CB6727 /* Visualization.framework */; };
+		D11C75B32D0F96DB0061552B /* Visualization.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A6C2CEC213700CB6727 /* Visualization.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1A5041A2D011F9A00849EE5 /* AdventOfCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A282CEC140400CB6727 /* AdventOfCode.framework */; };
 		D1A5041B2D011F9A00849EE5 /* AdventOfCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A282CEC140400CB6727 /* AdventOfCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1A5041E2D011F9A00849EE5 /* Visualization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E20A6C2CEC213700CB6727 /* Visualization.framework */; };
@@ -42,6 +46,20 @@
 			remoteInfo = "Advent of Code";
 		};
 		D11C758F2D0DC0E40061552B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1E20A082CEC131E00CB6727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1E20A6B2CEC213700CB6727;
+			remoteInfo = Visualization;
+		};
+		D11C75B02D0F96DB0061552B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1E20A082CEC131E00CB6727 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1E20A272CEC140400CB6727;
+			remoteInfo = "Advent of Code";
+		};
+		D11C75B42D0F96DB0061552B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D1E20A082CEC131E00CB6727 /* Project object */;
 			proxyType = 1;
@@ -108,6 +126,18 @@
 			files = (
 				D11C758A2D0DC0E40061552B /* AdventOfCode.framework in Embed Frameworks */,
 				D11C758E2D0DC0E40061552B /* Visualization.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D11C75B62D0F96DB0061552B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D11C75AF2D0F96DB0061552B /* AdventOfCode.framework in Embed Frameworks */,
+				D11C75B32D0F96DB0061552B /* Visualization.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +213,7 @@
 /* Begin PBXFileReference section */
 		D11C756D2D0CB5400061552B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
 		D11C757A2D0DC0970061552B /* Day 14 Visualization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day 14 Visualization.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D11C759F2D0F96A30061552B /* Day 15 Visualization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day 15 Visualization.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A504092D011EC900849EE5 /* Day 4 Visualization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day 4 Visualization.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A504F72D08ED0000849EE5 /* Day 10 Visualization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day 10 Visualization.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E20A282CEC140400CB6727 /* AdventOfCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdventOfCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +229,11 @@
 		D11C757B2D0DC0970061552B /* Day 14 Visualization */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Day 14 Visualization";
+			sourceTree = "<group>";
+		};
+		D11C75A02D0F96A30061552B /* Day 15 Visualization */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Day 15 Visualization";
 			sourceTree = "<group>";
 		};
 		D1A5040A2D011EC900849EE5 /* Day 4 Visualization */ = {
@@ -244,6 +280,15 @@
 			files = (
 				D11C75892D0DC0E40061552B /* AdventOfCode.framework in Frameworks */,
 				D11C758D2D0DC0E40061552B /* Visualization.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D11C759C2D0F96A30061552B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D11C75AE2D0F96DB0061552B /* AdventOfCode.framework in Frameworks */,
+				D11C75B22D0F96DB0061552B /* Visualization.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +366,7 @@
 				D1A5040A2D011EC900849EE5 /* Day 4 Visualization */,
 				D1A504F82D08ED0000849EE5 /* Day 10 Visualization */,
 				D11C757B2D0DC0970061552B /* Day 14 Visualization */,
+				D11C75A02D0F96A30061552B /* Day 15 Visualization */,
 				D1E20A922CEC228500CB6727 /* Visualization Testing */,
 				D1E20AAC2CEC23D900CB6727 /* Visualization 3D Testing */,
 				D1E20A322CEC148F00CB6727 /* Frameworks */,
@@ -339,6 +385,7 @@
 				D1A504092D011EC900849EE5 /* Day 4 Visualization.app */,
 				D1A504F72D08ED0000849EE5 /* Day 10 Visualization.app */,
 				D11C757A2D0DC0970061552B /* Day 14 Visualization.app */,
+				D11C759F2D0F96A30061552B /* Day 15 Visualization.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -394,6 +441,31 @@
 			);
 			productName = "Day 14 Visualization";
 			productReference = D11C757A2D0DC0970061552B /* Day 14 Visualization.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D11C759E2D0F96A30061552B /* Day 15 Visualization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D11C75AB2D0F96A50061552B /* Build configuration list for PBXNativeTarget "Day 15 Visualization" */;
+			buildPhases = (
+				D11C759B2D0F96A30061552B /* Sources */,
+				D11C759C2D0F96A30061552B /* Frameworks */,
+				D11C759D2D0F96A30061552B /* Resources */,
+				D11C75B62D0F96DB0061552B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D11C75B12D0F96DB0061552B /* PBXTargetDependency */,
+				D11C75B52D0F96DB0061552B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D11C75A02D0F96A30061552B /* Day 15 Visualization */,
+			);
+			name = "Day 15 Visualization";
+			packageProductDependencies = (
+			);
+			productName = "Day 15 Visualization";
+			productReference = D11C759F2D0F96A30061552B /* Day 15 Visualization.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D1A504082D011EC900849EE5 /* Day 4 Visualization */ = {
@@ -580,6 +652,9 @@
 					D11C75792D0DC0970061552B = {
 						CreatedOnToolsVersion = 16.2;
 					};
+					D11C759E2D0F96A30061552B = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					D1A504082D011EC900849EE5 = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -630,6 +705,7 @@
 				D1A504082D011EC900849EE5 /* Day 4 Visualization */,
 				D1A504F62D08ED0000849EE5 /* Day 10 Visualization */,
 				D11C75792D0DC0970061552B /* Day 14 Visualization */,
+				D11C759E2D0F96A30061552B /* Day 15 Visualization */,
 				D1E20A902CEC228500CB6727 /* Visualization Testing */,
 				D1E20AAA2CEC23D800CB6727 /* Visualization 3D Testing */,
 			);
@@ -638,6 +714,13 @@
 
 /* Begin PBXResourcesBuildPhase section */
 		D11C75782D0DC0970061552B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D11C759D2D0F96A30061552B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -692,6 +775,13 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		D11C75762D0DC0970061552B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D11C759B2D0F96A30061552B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -759,6 +849,16 @@
 			isa = PBXTargetDependency;
 			target = D1E20A6B2CEC213700CB6727 /* Visualization */;
 			targetProxy = D11C758F2D0DC0E40061552B /* PBXContainerItemProxy */;
+		};
+		D11C75B12D0F96DB0061552B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1E20A272CEC140400CB6727 /* Advent of Code */;
+			targetProxy = D11C75B02D0F96DB0061552B /* PBXContainerItemProxy */;
+		};
+		D11C75B52D0F96DB0061552B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1E20A6B2CEC213700CB6727 /* Visualization */;
+			targetProxy = D11C75B42D0F96DB0061552B /* PBXContainerItemProxy */;
 		};
 		D1A5041D2D011F9A00849EE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -866,6 +966,84 @@
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.advent-of-code.2024.day-14-visualization";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		D11C75AC2D0F96A50061552B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Day 15 Visualization/Day15Visualization.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Day 15 Visualization/Preview Content\"";
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.advent-of-code.2024.day-15-visualization";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		D11C75AD2D0F96A50061552B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Day 15 Visualization/Day15Visualization.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Day 15 Visualization/Preview Content\"";
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.advent-of-code.2024.day-15-visualization";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -1534,6 +1712,15 @@
 			buildConfigurations = (
 				D11C75872D0DC0980061552B /* Debug */,
 				D11C75882D0DC0980061552B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D11C75AB2D0F96A50061552B /* Build configuration list for PBXNativeTarget "Day 15 Visualization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D11C75AC2D0F96A50061552B /* Debug */,
+				D11C75AD2D0F96A50061552B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

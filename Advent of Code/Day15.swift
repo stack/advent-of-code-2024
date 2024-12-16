@@ -10,14 +10,14 @@ import Foundation
 
 public struct Day15: AdventDay {
     
-    struct Warehouse {
-        var width: Int = 0
-        var height: Int = 0
+    public struct Warehouse {
+        public var width: Int = 0
+        public var height: Int = 0
         
-        var boxes: Set<Point> = []
-        var walls: Set<Point> = []
-        var robot: Point = .zero
-        var instructions: [Direction] = []
+        public var boxes: Set<Point> = []
+        public var walls: Set<Point> = []
+        public var robot: Point = .zero
+        public var instructions: [Direction] = []
         
         func run() -> Warehouse {
             var nextWarehouse = self
@@ -101,21 +101,29 @@ public struct Day15: AdventDay {
         }
     }
     
-    struct WideWarehouse {
-        var width: Int = 0
-        var height: Int = 0
+    public struct WideWarehouse {
+        public var width: Int = 0
+        public var height: Int = 0
         
-        var boxes: Set<Point> = []
-        var walls: Set<Point> = []
-        var robot: Point = .zero
-        var instructions: [Direction] = []
+        public var boxes: Set<Point> = []
+        public var walls: Set<Point> = []
+        public var robot: Point = .zero
+        public var instructions: [Direction] = []
         
+        public init(width: Int = 0, height: Int = 0, boxes: Set<Point> = [], walls: Set<Point> = [], robot: Point = .zero, instructions: [Direction] = []) {
+            self.width = width
+            self.height = height
+            self.boxes = boxes
+            self.walls = walls
+            self.robot = robot
+            self.instructions = instructions
+        }
         
         var score: Int {
             boxes.reduce(0) { $0 + ($1.y * 100) + $1.x }
         }
         
-        func run(debug: Bool = false) -> WideWarehouse {
+        @discardableResult public func run(debug: Bool = false, render: ((Set<Point>, Point, Set<Point>?, Point) -> Void)? = nil) -> WideWarehouse {
             var nextWarehouse = self
             
             if debug { printWarehouse(direction: nil) }
@@ -130,7 +138,6 @@ public struct Day15: AdventDay {
                     continue
                 }
                 
-                
                 // Move if the space is empty
                 let potentialBoxes = switch instruction {
                 case .north, .south:
@@ -142,7 +149,10 @@ public struct Day15: AdventDay {
                 }
                 
                 guard let collision = nextWarehouse.boxes.intersection(potentialBoxes).first else {
+                    render?(nextWarehouse.boxes, nextWarehouse.robot, nil, instruction.offset)
+                    
                     nextWarehouse.robot = nextPosition
+                    
                     if debug { nextWarehouse.printWarehouse(direction: instruction) }
                     continue
                 }
@@ -193,9 +203,13 @@ public struct Day15: AdventDay {
                 let movedBoxes = boxesToMove.map { $0 + instruction.offset }
                 
                 nextWarehouse.boxes.subtract(boxesToMove)
+                
+                render?(nextWarehouse.boxes, nextWarehouse.robot, boxesToMove, instruction.offset)
+                
                 nextWarehouse.boxes.formUnion(movedBoxes)
                 
                 nextWarehouse.robot = nextPosition
+                
                 
                 if debug { nextWarehouse.printWarehouse(direction: instruction) }
             }
