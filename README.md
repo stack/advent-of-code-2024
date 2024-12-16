@@ -20,3 +20,5 @@ My submissions for [Advent of Code 2024](https://adventofcode.com)
 ## Assets
 
 * [Flag](https://sketchfab.com/3d-models/flag-e947a018194745598df88444bf43de11) by Guillermo T
+* [Stone Block](https://sketchfab.com/3d-models/stylized-low-poly-stone-block-8e0ed57a0c204e938437f798f05ae57d) by Rocco Giandomenico
+* [Wood Crate](https://sketchfab.com/3d-models/wooden-crate-2a3ac54357bb4b92bfbc119111c09fd1) by Memorie
