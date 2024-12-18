@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum Direction: Hashable, CustomDebugStringConvertible, Sendable {
+public enum Direction: CaseIterable, Hashable, CustomDebugStringConvertible, Sendable {
     case north
     case south
     case east

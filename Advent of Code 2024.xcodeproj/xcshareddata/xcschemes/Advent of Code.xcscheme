@@ -21,6 +21,20 @@
                ReferencedContainer = "container:Advent of Code 2024.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D11C75FF2D1236150061552B"
+               BuildableName = "Advent of Code Testing.xctest"
+               BlueprintName = "Advent of Code Testing"
+               ReferencedContainer = "container:Advent of Code 2024.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
