@@ -41,6 +41,15 @@ public enum Direction: CaseIterable, Hashable, CustomDebugStringConvertible, Sen
         }
     }
     
+    public var reversed: Direction {
+        switch self {
+        case .north: .south
+        case .south: .north
+        case .east: .west
+        case .west: .east
+        }
+    }
+    
     public var offset: Point {
         switch self {
         case .north: Point(x: 0, y: -1)
