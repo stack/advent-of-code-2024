@@ -28,6 +28,15 @@ public struct Point: Hashable, Sendable {
         return neighbors
     }
     
+    public static var cardinalVectors: [Point] {
+        [
+            Point(x: -1, y:  0),
+            Point(x:  1, y:  0),
+            Point(x:  0, y: -1),
+            Point(x:  0, y:  1)
+        ]
+    }
+    
     public var allNeighbors: [Point] {
         var neighbors: [Point] = []
         
